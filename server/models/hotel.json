@@ -1,0 +1,38 @@
+{
+  "name": "hotel",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "hotelId": {
+      "type": "object",
+      "required": true
+    },
+    "hotelName": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "createdDate": {
+      "type": "date",
+      "required": true
+    },
+    "modifiedDate": {
+      "type": "date",
+      "required": true
+    },
+    "status": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

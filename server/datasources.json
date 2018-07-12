@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "hotelBooking": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "hotelBooking",
+    "password": "",
+    "name": "hotelBooking",
+    "user": "",
+    "connector": "mongodb"
+  }
+}

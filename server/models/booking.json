@@ -1,0 +1,58 @@
+{
+  "name": "booking",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "bookingId": {
+      "type": "object",
+      "required": true
+    },
+    "userId": {
+      "type": "object",
+      "required": true
+    },
+    "hotelId": {
+      "type": "object",
+      "required": true
+    },
+    "roomId": {
+      "type": "object",
+      "required": true
+    },
+    "startDate": {
+      "type": "date",
+      "required": true
+    },
+    "endDate": {
+      "type": "date",
+      "required": true
+    },
+    "createdDate": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "consumer": {
+      "type": "belongsTo",
+      "model": "consumer",
+      "foreignKey": "userId"
+    },
+    "hotel": {
+      "type": "hasMany",
+      "model": "hotel",
+      "foreignKey": "hotelId"
+    },
+    "room": {
+      "type": "hasMany",
+      "model": "roon",
+      "foreignKey": "roomId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
